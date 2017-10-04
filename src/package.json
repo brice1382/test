@@ -1,0 +1,14 @@
+{
+  "name": "knowledge-consortium",
+  "version": "0.0.1",
+  "description": "Place for Magnum PI team members, and invitees, to share knowledge",
+  "main": "app.js",
+  "author": "Brandon Rice | Team Magnum PI",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server -a localhost -p 1313 -c-1 ./app"
+  },
+  "dependencies": {
+    "bower": "^1.8.2"
+  }
+}

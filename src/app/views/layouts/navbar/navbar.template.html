@@ -1,0 +1,41 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid" ng-controller="NavbarCtrl as vm">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="javascript:void(0)">Knowledge Consortium</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav pull-right">
+                <li ng-class="{ active: isActive('/home') }">
+                    <a href="#!/home">
+                        Home
+                        <i class="fa fa-home"></i>
+                    </a>
+                </li>
+                <li ng-class="{ active: isActive('/consortium') }">
+                    <a href="#!/consortium">
+                        Consortium
+                        <i class="fa fa-graduation-cap"></i>
+                    </a>
+                </li>
+                <li ng-class="{ active: isActive('/about') }">
+                    <a href="#!/about">
+                        About
+                        <i class="fa fa-info"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" ng-click="something()">
+                        Logout
+                        <i class="fa fa-sign-out"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
